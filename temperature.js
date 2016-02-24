@@ -2,7 +2,7 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /^([-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?)\s*([fFcC])$/;
+  var regexp = /^([-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?)\s*([f|c]|ce|Cel|Celsius|Fa|Far|Farenheit)$/i;
 
   var m = temp.match(regexp);
 
@@ -10,7 +10,8 @@ function calculate() {
     var num = m[1];
     var type = m[2];
     num = parseFloat(num);
-    if (type == 'c' || type == 'C') {
+    type = type.toLowerCase();
+    if (type == 'c' || type == 'ce' || type == 'CE' || type == 'cel' || type == 'celsius') {
       result = (num * 9/5)+32;
       result = result.toFixed(1)+" Farenheit"
     }
