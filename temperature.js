@@ -2,10 +2,10 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-  
+  var regexp = /^([-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?)\s*([f|c]|ce|Cel|Celsius|Fa|Far|Farenheit)$/i;
+
   var m = temp.match(regexp);
-  
+
   if (m) {
     var num = m[1];
     var type = m[2];
