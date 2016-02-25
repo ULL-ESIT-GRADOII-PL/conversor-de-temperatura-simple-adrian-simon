@@ -18,11 +18,10 @@ input       {
               border-radius: 20px 20px 20px 20px;
               padding: 5px  5px;
               font-size:large;       }
-body
-{
- background-color: #9EB6F4;  /* blue */
- font-size:large;
- font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+body {
+  background-color: #9EB6F4;  /* blue */
+  font-size:large;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
 
 h1 {
