@@ -10,21 +10,22 @@
   </head>
   <body>
       <h1>Temperature Converter</h1>
-    <table>
-      <tr>
-        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
-      </tr>
-      <tr>
-        <th>Converted Temperature:</th>
-        <td><span class="output" id="converted"></span></td>
-      </tr>
-    </table>
-    <p><strong>Enlaces importantes<strong><p>
-    <ul>
-      <li><button><a href="http://alu0100614220.github.io/">Adrián Mesa Jaubert</a></button></li>
-      <li><button><a href="http://alu0100625066.github.io/">Simón Fuertes Sánchez</a></button></li>
-      <li><button><a href="https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-adrian-simon">Repositorio de la práctica</a></li></button></li>
-    </ul>
+      <div id="entrada">
+        <div id="textoEntrada">Enter  Temperature (examples: 32F, 45C, -2.5f):</div>
+        <input id="original" autofocus onchange="calculate();" placeholder="32F" size="50">
+      </div>
+      <div id="salida">
+        <div id="textoSalida">Converted Temperature:</div>
+        <div class="output" id="converted"></div>
+      </div>
+
+    <div id="botones">
+      <button><a href="http://alu0100614220.github.io/">Adrián Mesa Jaubert</a></button>
+      <br>
+      <button><a href="http://alu0100625066.github.io/">Simón Fuertes Sánchez</a></button>
+      <br>
+      <button><a href="https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-adrian-simon">Repositorio de la práctica</a></button>
+      <br>
+    </div>
   </body>
 </html>
